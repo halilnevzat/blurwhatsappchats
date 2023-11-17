@@ -1,0 +1,19 @@
+/* popup.css */
+body {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .popup-container {
+    text-align: center;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  

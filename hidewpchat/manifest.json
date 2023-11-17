@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Blur Extension",
+  "version": "1.0",
+  "permissions": ["activeTab", "commands","declarativeNetRequest",
+  "declarativeNetRequestFeedback",
+  "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/16.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "commands": {
+    "toggleBlur": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q"
+      },
+      "description": "Toggle Blur for Chats"
+    }
+  }
+}

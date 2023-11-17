@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Blur Extension Options</title>
+</head>
+<body>
+    <h1>Extension Options</h1>
+
+    <div>
+        <label for="blurLevel">Blur Level:</label>
+        <input type="range" id="blurLevel" min="0" max="10" step="1">
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" id="defaultBlur"> Blur by Default
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" id="selectiveBlur"> Selective Chat Blurring
+        </label>
+    </div>
+
+    <button id="saveOptions">Save Options</button>
+
+    <script src="options.js"></script>
+</body>
+</html>
